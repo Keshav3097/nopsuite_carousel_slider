@@ -1,6 +1,25 @@
 # NopSuite Carousel Slider
 
-This does make Flutter Framework complicated dropdown button less complicated and provide default os dropdown behaviour
+## Features
+
+* Infinite scroll
+* Custom child widgets
+
+## Supported platforms
+
+* Flutter Android
+* Flutter iOS
+* Flutter web
+* Flutter desktop
+
+## Installation
+
+Add `carousel_slider: ^4.1.1` to your `pubspec.yaml` dependencies. And import it:
+
+```dart
+import 'package:nopsuite_carousel_slider/effects/worm_effect.dart';
+import 'package:nopsuite_carousel_slider/nopsuite_carousel_slider.dart';
+```
 
 # How to Use
 ```          
@@ -19,9 +38,8 @@ This does make Flutter Framework complicated dropdown button less complicated an
     ),
   )
 ```
+## Screenshot
 
-## Android Dropdown
-![drop-down-list](https://github.com/Keshav3097/flutter_platform_dropdown/blob/master/android.png)
+![image](screenshot.png)
 
-## iOS Dropdown
-![drop-down-list](https://github.com/Keshav3097/flutter_platform_dropdown/blob/master/ios.png)
+![prefetch](slider.gif)
