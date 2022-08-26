@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nopsuite_carousel_slider/effects/worm_effect.dart';
 import 'package:nopsuite_carousel_slider/nopsuite_carousel_slider.dart';
 
 void main() {
@@ -64,9 +65,18 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
 
               NopSuiteCarouselSlider(
-                  controller: controller,
-                  count: pages.length,
-                  itemBuilder: pages,
+                controller: controller,
+                count: pages.length,
+                itemBuilder: pages,
+                effect: const WormEffect(
+                  dotHeight: 8,
+                  dotWidth: 16,
+                  radius: 4,
+                  dotColor: Colors.black26,
+                  activeDotColor: Colors.black,
+                  type: WormType.normal,
+                  strokeWidth: 5,
+                ),
               )
             ],
           ),
